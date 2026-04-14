@@ -62,7 +62,7 @@ while (opcion !== 0) {
 `));
 
   switch (opcion) {
-    case 1: mostrar(); break;
+    case 1: listar(); break;
     case 2: console.log(aprobados()); break;
     case 3: console.log(reprobados()); break;
     case 4: console.log(nombresMayus()); break;
