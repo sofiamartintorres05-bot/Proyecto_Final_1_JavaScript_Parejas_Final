@@ -66,5 +66,6 @@ while (opcion !== 0) {
       let nota = parseFloat(prompt("Ingrese nota:"));
       console.log(clasificar(nota));
       break;
+
   }
 }
