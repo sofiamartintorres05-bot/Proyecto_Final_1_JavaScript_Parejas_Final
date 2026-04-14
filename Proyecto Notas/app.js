@@ -40,3 +40,31 @@ function clasificar(nota) {
 function ordenar() {
   return [...aprendices].sort((a, b) => b.nota - a.nota);
 }
+
+let opcion;
+
+while (opcion !== 0) {
+  opcion = parseInt(prompt(`
+1. Mostrar
+2. Aprobados
+3. Reprobados
+4. Nombres en mayúscula
+5. Promedio
+6. Ordenar
+7. Clasificar nota
+0. Salir
+`));
+
+  switch (opcion) {
+    case 1: mostrar(); break;
+    case 2: console.log(aprobados()); break;
+    case 3: console.log(reprobados()); break;
+    case 4: console.log(nombresMayus()); break;
+    case 5: console.log(promedio()); break;
+    case 6: console.log(ordenar()); break;
+    case 7:
+      let nota = parseFloat(prompt("Ingrese nota:"));
+      console.log(clasificar(nota));
+      break;
+  }
+}
