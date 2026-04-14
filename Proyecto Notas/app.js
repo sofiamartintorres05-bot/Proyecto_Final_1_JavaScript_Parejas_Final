@@ -24,3 +24,16 @@ function reprobados() {
 function nombresMayus() {
   return aprendices.map(a => a.nombre.toUpperCase());
 }
+function ordenar() {
+  return [...aprendices].sort((a, b) => b.nota - a.nota);
+}
+
+// 🟢 SWITCH
+function clasificar(nota) {
+  switch (true) {
+    case nota < 3: return "Bajo";
+    case nota < 4: return "Básico";
+    case nota < 4.5: return "Alto";
+    default: return "Superior";
+  }
+}
