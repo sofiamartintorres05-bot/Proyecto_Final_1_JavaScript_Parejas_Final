@@ -1,10 +1,8 @@
-const aprendices = [
-  { nombre: "Ana", nota: 4.5, programa: "ADSO" },
-  { nombre: "Luis", nota: 3.2, programa: "ADSO" },
-  { nombre: "Carlos", nota: 2.8, programa: "ADSO" },
-  { nombre: "Maria", nota: 4.8, programa: "ADSO" }
-];
 
-function mostrar() {
-  aprendices.forEach(a => console.log(a));
-}
+const aprendices = [
+    { nombre: "Ana", nota: 4.5, programa: "ADSO" },
+    { nombre: "Luis", nota: 2.8, programa: "ADSO" },
+    { nombre: "Marta", nota: 3.7, programa: "Diseno Web" },
+    { nombre: "Pedro", nota: 1.9, programa: "ADSO" },
+    { nombre: "Sofia", nota: 5.0, programa: "Diseno Web" }
+];
