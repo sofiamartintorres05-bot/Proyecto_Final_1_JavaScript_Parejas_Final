@@ -24,6 +24,12 @@ function reprobados() {
 function nombresMayus() {
   return aprendices.map(a => a.nombre.toUpperCase());
 }
+
+function promedio() {
+  return aprendices.reduce((acc, a) => acc + a.nota, 0) / aprendices.length;
+}
+
+
 function ordenar() {
   return [...aprendices].sort((a, b) => b.nota - a.nota);
 }
