@@ -20,3 +20,7 @@ function aprobados() {
 function reprobados() {
   return aprendices.filter(a => a.nota < 3);
 }
+
+function nombresMayus() {
+  return aprendices.map(a => a.nombre.toUpperCase());
+}
