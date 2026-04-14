@@ -40,3 +40,12 @@ function clasificar(nota) {
 function ordenar() {
   return [...aprendices].sort((a, b) => b.nota - a.nota);
 }
+
+function clasificar(nota) {
+  switch (true) {
+    case nota < 3: return "Bajo";
+    case nota < 4: return "Básico";
+    case nota < 4.5: return "Alto";
+    default: return "Superior";
+  }
+}
