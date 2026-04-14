@@ -28,7 +28,6 @@ function ordenar() {
   return [...aprendices].sort((a, b) => b.nota - a.nota);
 }
 
-// 🟢 SWITCH
 function clasificar(nota) {
   switch (true) {
     case nota < 3: return "Bajo";
