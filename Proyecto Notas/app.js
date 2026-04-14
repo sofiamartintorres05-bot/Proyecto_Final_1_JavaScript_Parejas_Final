@@ -12,3 +12,11 @@ function listar() {
     console.log(a.nombre, a.nota, a.programa);
   });
 }
+
+function aprobados() {
+  return aprendices.filter(a => a.nota >= 3);
+}
+
+function reprobados() {
+  return aprendices.filter(a => a.nota < 3);
+}
