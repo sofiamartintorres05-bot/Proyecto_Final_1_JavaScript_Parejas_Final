@@ -36,3 +36,7 @@ function clasificar(nota) {
     default: return "Superior";
   }
 }
+
+function ordenar() {
+  return [...aprendices].sort((a, b) => b.nota - a.nota);
+}
